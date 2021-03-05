@@ -1,6 +1,40 @@
 /* 
-    Theme Name: Site name
-	Text Domain: Site url
-	Author : Your Name
-	Author email : your mail
+    Theme Name: Asialearn
+	Text Domain: https://asialearn.sg
+	Author : Rohan Yeole And Rushika Namalkar 
+	Author email : Rayeole@gmail.com
 */
+
+
+/* General CSS */
+.row {display: flex;align-items: center;}
+body{font-family: 'Roboto', sans-serif;font-weight: 300;scrollbar-width: thin;}
+.pos-rel{position: relative;}
+.tran{transition: all 0.5s ease;}
+
+
+/* enroll section */
+#enroll-today{background-color: #ed1c24;padding: 100px 0;color: #fff;}
+#enroll-today .enroll-head{font-size: 40px;line-height: 48px;text-transform: capitalize;font-weight: 700;padding-bottom: 20px;}
+.join-now {letter-spacing: 0;background-color: #242c42;padding: 10px 25px;border-radius: 3px;border: 1px solid transparent;font-size: 20px;line-height: 26px;font-weight: bold;display: inline-block;}
+#enroll-today .enroll-sub-head{font-weight: 400;}
+.enroll-left{width: 79%;display: inline-block; vertical-align: middle;padding-right: 50px;}
+.enroll-right{width: 20%;display: inline-block;vertical-align: middle;}
+
+/* All Before and After elements */
+
+
+
+/* All Hover effects */
+.join-now:hover{color: #000;background-color: white;border-color: #242c42;}
+a:hover{text-decoration:none;}
+
+
+
+/* media queries */
+@media (min-width:577px){.container, .container-sm{max-width: 100%;}}
+@media (max-width: 767px) {
+	.enroll-left, .enroll-right{width: 100%;float: none;}
+	.join-now{margin-top: 40px;}
+	#enroll-today{padding:50px 0;}
+}
