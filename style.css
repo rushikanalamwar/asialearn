@@ -7,7 +7,7 @@
 
 
 /* General CSS */
-.row {display: flex;align-items: center;}
+.row {align-items: center;}
 body{font-family: 'Roboto', sans-serif;font-weight: 300;scrollbar-width: thin;}
 .pos-rel{position: relative;}
 .tran{transition: all 0.5s ease;}
@@ -21,6 +21,15 @@ body{font-family: 'Roboto', sans-serif;font-weight: 300;scrollbar-width: thin;}
 .enroll-left{width: 79%;display: inline-block; vertical-align: middle;padding-right: 50px;}
 .enroll-right{width: 20%;display: inline-block;vertical-align: middle;}
 
+/* Centers Location */
+.card-height{height: 150px;}
+.card.border-secondary{padding: 0 15px;}
+.center-col svg path{fill: #ed1c24;}
+
+
+
+
+
 /* All Before and After elements */
 
 
@@ -28,12 +37,16 @@ body{font-family: 'Roboto', sans-serif;font-weight: 300;scrollbar-width: thin;}
 /* All Hover effects */
 .join-now:hover{color: #000;background-color: white;border-color: #242c42;}
 a:hover{text-decoration:none;}
-
+.center-a:hover{color: #ed1c24;}
+.center-a:hover .card.border-secondary{border-color: #ed1c24 !important;}
 
 
 /* media queries */
-@media (min-width:577px){.container, .container-sm{max-width: 100%;}}
+@media (min-width:577px){
+	.container, .container-sm{max-width: 1170px;}
+}
 @media (max-width: 767px) {
+	.card-height{height: auto;}
 	.enroll-left, .enroll-right{width: 100%;float: none;}
 	.join-now{margin-top: 40px;}
 	#enroll-today{padding:50px 0;}
