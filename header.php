@@ -10,6 +10,9 @@
 	<meta name="msapplication-navbutton-color" content="#b280ff">
 	<meta name="apple-mobile-web-app-status-bar-style" content="#b280ff">
 	<link href="<?php echo get_template_directory_uri(); ?>/assets/img/favicon.png" rel="shortcut icon">
+	<!-- bootstrap 4.5 -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
 	<?php
 		wp_head();
 		if(function_exists('get_common_file_path')){
@@ -18,6 +21,6 @@
 	?>
 <header>
 	<nav>
-	
+		
 	</nav>
 </header>
