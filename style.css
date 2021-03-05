@@ -11,9 +11,10 @@
 body{font-family: 'Roboto', sans-serif;font-weight: 300;scrollbar-width: thin;}
 .pos-rel{position: relative;}
 .tran{transition: all 0.5s ease;}
-.breadcrumb{font-weight: bolder;}
+.breadcrumb{font-weight: 400;}
 .main-txt{color: #ed1c24;}
-
+.text-head{background-color: #ed1c24;padding: 100px 0;color: #fff;}
+strong{font-weight: bold;}
 /* enroll section */
 #enroll-today{background-color: #ed1c24;padding: 100px 0;color: #fff;}
 #enroll-today .enroll-head{font-size: 40px;line-height: 48px;text-transform: capitalize;font-weight: 700;padding-bottom: 20px;}
@@ -27,13 +28,13 @@ body{font-family: 'Roboto', sans-serif;font-weight: 300;scrollbar-width: thin;}
 .card.border-secondary{padding: 0 15px;}
 .center-col svg path{fill: #ed1c24;}
 .center-content{font-weight: 400;font-size: 17px;line-height: 30px;letter-spacing: 0.2px;}
-.center-content h2{font-weight: bolder;}
+.center-content h2{font-weight: bolder;margin: 0 !important;font-size: 50px;line-height: 58px;}
 
 
 
 
 /* All Before and After elements */
-.center-content h2::before{position: absolute;content: '';height: 5px;width: 65px;background-color: #ed1c24;left: 0;top: auto;left: 0;
+.center-content h2::before{position: absolute;content: '';height: 5px;width: 65px;background-color: #fff;left: 0;top: auto;left: 0;
 bottom: -5px;}
 
 

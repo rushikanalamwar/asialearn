@@ -1,12 +1,19 @@
 <?php /* Template Name: Centers */ get_header();?>
 <section id="center">
-    <?php global $dispayBreadcrumb; $dispayBreadcrumb = True;echo get_breadcrumb();?>
+    <div class="center-content mb-5">
+        <?php if (have_posts() ): while (have_posts()) :the_post();?>
+            <div class="text-head">
+                <div class="container">
+                    <h2 class="mb-4 pos-rel"><?php echo the_title();?></h2>
+                </div>
+            </div>
+            <?php global $dispayBreadcrumb; $dispayBreadcrumb = True;echo get_breadcrumb();?>
+            <div class="container">
+                <?php echo the_content();?>
+            </div>
+        <?php endwhile; endif;?>
+    </div>    
     <div class="container">
-        <div class="center-content mt-3 mb-5">
-            <?php if (have_posts() ): while (have_posts()) :the_post();?>
-                <h2 class="mb-4 pos-rel"><?php echo the_title();?></h2>
-            <?php echo the_content(); endwhile; endif;?>
-        </div>
         <div class="row">
             <?php $fields = CFS()->get( 'locations_loop' ); foreach ( $fields as $field ) { ?>
             <div class="col-md-6 col-lg-4 col-sm-12">
