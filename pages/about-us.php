@@ -12,5 +12,25 @@
             </div>
         <?php endwhile; endif;?>
     </div>
-<?php get_template_part( 'template-parts/enroll', 'today' ); ?> 
+    <div class="about-resources">
+        <div class="container">
+            <h2><?php echo CFS()->get( 'resource_title' );?></h2>
+            <p class="about-sub"><?php echo CFS()->get( 'resource_sub_title' );?></p>
+            <div class="res-list">
+                <?php $fields = CFS()->get( 'resource_loop' ); foreach ( $fields as $field ) { ?>
+                <div class="res-wrap">
+                    <div class="img-block pos-rel">
+                        <img src="<?php echo $field['icon'];?>" class="img-fluid" alt="<?php echo $field['icon_text'];?>">
+                    </div>
+                    <div class="text-block">
+                        <?php echo $field['icon_text'];?>
+                    </div>
+                </div>
+                <?php } ?>
+            </div>
+            
+                
+        </div>
+    </div>
+    <?php get_template_part( 'template-parts/enroll', 'today' ); ?> 
 <?php get_footer(); ?>

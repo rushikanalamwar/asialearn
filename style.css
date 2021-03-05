@@ -21,7 +21,7 @@ strong{font-weight: bold;}
 .join-now {letter-spacing: 0;background-color: #242c42;padding: 10px 25px;border-radius: 3px;border: 1px solid transparent;font-size: 20px;line-height: 26px;font-weight: bold;display: inline-block;}
 #enroll-today .enroll-sub-head{font-weight: 400;}
 .enroll-left{width: 79%;display: inline-block; vertical-align: middle;padding-right: 50px;}
-.enroll-right{width: 20%;display: inline-block;vertical-align: middle;}
+.enroll-right{width: 20%;display: inline-block;vertical-align: middle;text-align: center;}
 
 /* Centers Location */
 .card-height{height: 150px;}
@@ -30,9 +30,14 @@ strong{font-weight: bold;}
 .center-content{font-weight: 400;font-size: 17px;line-height: 30px;letter-spacing: 0.2px;}
 .center-content h2{font-weight: bolder;margin: 0 !important;font-size: 50px;line-height: 58px;}
 
-
-
-
+/* About Us */
+.img-block{height: 100px;width: 100px;background-color: #fff;border-radius: 50%;display: block;margin: 0 auto;vertical-align: middle;position: relative;z-index: 2;transition: all .3s ease-in;padding:35px 0;border: 1px solid transparent;}
+.res-list{margin: auto;text-align: center;padding-top: 70px;}
+.res-list .res-wrap{width: 20%;display: inline-block;vertical-align: middle;}
+.about-resources{background-color: #eaedf5;text-align: center;padding: 150px 0;}
+.about-resources h2 span{font-weight: bold;}
+.about-sub{font-weight: 400;font-size: 18px;}
+.text-block{font-size: 15px;font-weight: normal;padding-top: 20px;}
 /* All Before and After elements */
 .center-content h2::before{position: absolute;content: '';height: 5px;width: 65px;background-color: #fff;left: 0;top: auto;left: 0;
 bottom: -5px;}
@@ -43,15 +48,23 @@ bottom: -5px;}
 a:hover{text-decoration:none;color: #ed1c24;}
 .center-a:hover{}
 .center-a:hover .card.border-secondary{border-color: #ed1c24 !important;}
-
+.img-block:hover{border-color: #ed1c24;}
 
 /* media queries */
 @media (min-width:577px){
 	.container, .container-sm{max-width: 1170px;}
 }
+@media (max-width: 1024px) {
+	.about-resources{padding: 100px 0 50px;}
+	.res-list .res-wrap{width: 24%;}
+}
 @media (max-width: 767px) {
+	.res-list .res-wrap{width: 49%;margin-bottom: 40px;}
 	.card-height{height: auto;}
 	.enroll-left, .enroll-right{width: 100%;float: none;}
 	.join-now{margin-top: 40px;}
 	#enroll-today{padding:50px 0;}
+}
+@media (max-width: 499px) {
+	.res-list .res-wrap{width: 100%;margin-bottom: 30px;}
 }
