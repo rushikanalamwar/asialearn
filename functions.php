@@ -104,7 +104,7 @@
 			'pages/about-us.php',
 			'pages/contact-us.php',
 			'pages/privacy-policy.php',
-			'pages/terms-of-use.php',
+			'pages/centers.php',
 		);
 		global $dispayBreadcrumb;
 		

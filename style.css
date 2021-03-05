@@ -11,7 +11,8 @@
 body{font-family: 'Roboto', sans-serif;font-weight: 300;scrollbar-width: thin;}
 .pos-rel{position: relative;}
 .tran{transition: all 0.5s ease;}
-
+.breadcrumb{font-weight: bolder;}
+.main-txt{color: #ed1c24;}
 
 /* enroll section */
 #enroll-today{background-color: #ed1c24;padding: 100px 0;color: #fff;}
@@ -25,19 +26,21 @@ body{font-family: 'Roboto', sans-serif;font-weight: 300;scrollbar-width: thin;}
 .card-height{height: 150px;}
 .card.border-secondary{padding: 0 15px;}
 .center-col svg path{fill: #ed1c24;}
-
+.center-content{font-weight: 400;font-size: 17px;line-height: 30px;letter-spacing: 0.2px;}
+.center-content h2{font-weight: bolder;}
 
 
 
 
 /* All Before and After elements */
-
+.center-content h2::before{position: absolute;content: '';height: 5px;width: 65px;background-color: #ed1c24;left: 0;top: auto;left: 0;
+bottom: -5px;}
 
 
 /* All Hover effects */
 .join-now:hover{color: #000;background-color: white;border-color: #242c42;}
-a:hover{text-decoration:none;}
-.center-a:hover{color: #ed1c24;}
+a:hover{text-decoration:none;color: #ed1c24;}
+.center-a:hover{}
 .center-a:hover .card.border-secondary{border-color: #ed1c24 !important;}
 
 
