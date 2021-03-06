@@ -53,6 +53,12 @@ strong{font-weight: bold;}
 .testimonials-right-right{width: calc(100% - 120px);float: left;background-color: #eaedf5;padding: 20px 40px;}
 .testimonials-imag{text-align: center;}
 #testi-page .mob-desk{display: none;}
+
+/* About Asia Learn */
+#about-asia-learn{background-color: #242c42;color: white;padding: 150px;}
+#about-asia-learn .asia-head{font-size: 50px;font-weight: bold;}
+#about-asia-learn .asia-sub-head{font-size: 20px;font-weight: 400;}
+#about-asia-learn .link a{display: inline-block;padding: 5px 15px;border: 1px solid #fff;border-radius: 3px;font-size: 18px;margin-top: 50px;font-weight: 400;}
 /* All Before and After elements */
 .center-content h2::before{position: absolute;content: '';height: 5px;width: 65px;background-color: #fff;left: 0;top: auto;left: 0;
 bottom: -5px;}
@@ -65,6 +71,7 @@ bottom: -5px;}
 a:hover{text-decoration:none;color: #ed1c24;}
 .center-a:hover .card.border-secondary{border-color: #ed1c24 !important;}
 .img-block:hover{border-color: #ed1c24;}
+#about-asia-learn .link a:hover{background-color: #fff;color: #242c42;}
 
 /* media queries */
 @media (min-width:577px){
