@@ -5,7 +5,6 @@
 	Author email : Rayeole@gmail.com
 */
 
-
 /* General CSS */
 .row {align-items: center;}
 body{font-family: 'Roboto', sans-serif;font-weight: 300;scrollbar-width: thin;}
@@ -15,6 +14,7 @@ body{font-family: 'Roboto', sans-serif;font-weight: 300;scrollbar-width: thin;}
 .main-txt{color: #ed1c24;}
 .text-head{background-color: #ed1c24;padding: 100px 0;color: #fff;}
 strong{font-weight: bold;}
+
 /* enroll section */
 #enroll-today{background-color: #ed1c24;padding: 100px 0;color: #fff;}
 #enroll-today .enroll-head{font-size: 40px;line-height: 48px;text-transform: capitalize;font-weight: 700;padding-bottom: 20px;}
@@ -38,15 +38,31 @@ strong{font-weight: bold;}
 .about-resources h2 span{font-weight: bold;}
 .about-sub{font-weight: 400;font-size: 18px;}
 .text-block{font-size: 15px;font-weight: normal;padding-top: 20px;}
+
+/* Testimonial */
+.testimonials-imag img{border-radius: 100%;box-shadow: 0 0px 10px 0px #f8f8f8ab;height: auto;padding: 15px;}
+.testimonials-left{width: 120px;float: left;}
+.testimonials-right{width: calc(100% - 120px);float: right;background-color: #eaedf5;padding: 20px 40px;}
+.testimonials-sub-head p svg{width: 30px;height: auto;}
+.testimonials-sub-head p svg path{fill: #ed1c24;}
+.testimonials-slider .slick-slide{padding:0 20px;}
+.testimonials-slider{margin: 150px 100px !important;}
+.testimonials-slider .slick-dots{bottom: -45px;}
+.test-left-wrap, .test-right-wrap{padding: 50px 0;}
+.testimonials-left-left{width: 120px;float: right;}
+.testimonials-right-right{width: calc(100% - 120px);float: left;background-color: #eaedf5;padding: 20px 40px;}
+.testimonials-imag{text-align: center;}
+#testi-page .mob-desk{display: none;}
 /* All Before and After elements */
 .center-content h2::before{position: absolute;content: '';height: 5px;width: 65px;background-color: #fff;left: 0;top: auto;left: 0;
 bottom: -5px;}
+.testimonials-slider .slick-dots li button::before{color: red;font-size: 45px !important;}
+
 
 
 /* All Hover effects */
 .join-now:hover{color: #000;background-color: white;border-color: #242c42;}
 a:hover{text-decoration:none;color: #ed1c24;}
-.center-a:hover{}
 .center-a:hover .card.border-secondary{border-color: #ed1c24 !important;}
 .img-block:hover{border-color: #ed1c24;}
 
@@ -63,8 +79,13 @@ a:hover{text-decoration:none;color: #ed1c24;}
 	.card-height{height: auto;}
 	.enroll-left, .enroll-right{width: 100%;float: none;}
 	.join-now{margin-top: 40px;}
+	.test-left-wrap, .test-right-wrap{padding: 15px 0;}
 	#enroll-today{padding:50px 0;}
 }
 @media (max-width: 499px) {
 	.res-list .res-wrap{width: 100%;margin-bottom: 30px;}
+	#testi-page .mob-desk{display: block;}
+	.testimonials-imag img{padding: 15px 90px;}
+	#testi-page .no-mobile{display: none;}
+	#testi-page .testimonials-left, #testi-page .testimonials-right, #testi-page .testimonials-left-left, #testi-page .testimonials-right-right{float: none;width: 100%;}
 }

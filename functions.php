@@ -102,6 +102,7 @@
 
 		$breadcrumbs_temp  = array(
 			'pages/about-us.php',
+			'pages/testimonial.php',
 			'pages/contact-us.php',
 			'pages/privacy-policy.php',
 			'pages/centers.php',
