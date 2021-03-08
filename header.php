@@ -21,8 +21,10 @@
 			include(get_common_file_path('header'));
 		}
 	?>
-<header>
-	<nav>
-		
-	</nav>
-</header>
+	</head>
+	<body <?php body_class(); ?>>
+		<header>
+			<nav>
+				
+			</nav>
+		</header>
