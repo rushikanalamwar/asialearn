@@ -35,7 +35,7 @@
 		register_nav_menus( array(
 			'sns-top-menu'	=>	__('SNS Top Menu'),
 			'service'	=>	__('services menu'),
-			'links'	=>	__('links'),
+			'footer-menu-three'	=>	__('Footer Menu Three'),
 		) );
 	}
 	add_action( 'after_setup_theme', 'register_theme_menus' );

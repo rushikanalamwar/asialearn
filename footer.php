@@ -1,5 +1,66 @@
-<footer class="footer" >
-	
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4 col-md-6 col-sm-12">
+				<h2 class="mb-4"><?php bloginfo('title'); ?></h2>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-12">
+				<h5>Sitemap</h5>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-12">
+				<h5>We respect your privacy.</h5>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-4 col-md-6 col-sm-12">
+				<div class="address">
+					756, Upper Serangoon Road #02-10,</br> Upper Serangoon Shopping Centre,</br> Singapore 534626.
+				</div>
+				<div class="email-address">
+					<a href="mailto:sandhya@sipbrainpower.sg">
+						<div class="icon">
+							<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/img/e.png" alt="sandhya@sipbrainpower.sg">
+						</div>
+						<div class="text">
+							<p>sandhya@sipbrainpower.sg</p>
+						</div>
+					</a>
+				</div>
+				<div class="call-no">
+					<a href="tel:+65 – 94244953">
+						<div class="icon">
+							<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/img/phone-solid.png" alt="65 – 94244953" srcset="">
+						</div>
+						<div class="text">
+							<p>
+								+65 – 94244953
+							</p>	
+						</div>
+					</a>
+				</div>
+				
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-12">
+				<div class="row">
+					<div class="col-md-4">
+					<h5>Sitemap</h5>
+					</div>
+					<div class="col-md-4">
+					<h5>Sitemap</h5>	
+					</div>
+					<div class="col-md-4">
+						<?php wp_nav_menu( array( 'theme_location'=>'footer-menu-three' ) ); ?>
+					</div>
+				</div>				
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-12">
+				<h5>We respect your privacy.</h5>
+			</div>
+		</div>
+	</div>
+	<div class="copy text-center pt-4 pb-2">
+		<p>Copyright &copy; Asia Learning Resources, Singapore: Child Development Programs, Enrichment Classes & Private Tuition Classes | <a href="https://sipbrainpower.sg/" target="_blank" rel="noopener noreferrer"> Abacus Mental Arithmetic Classes</a>  </p>
+	</div>
 </footer>
 
 <?php

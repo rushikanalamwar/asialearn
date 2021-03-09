@@ -75,17 +75,27 @@ strong{font-weight: bold;}
 .why-us .img-wrap{padding: 20px 0 0 20px;border-radius: 30px;width: 60px;}
 .why-us .card-body{padding-right: 5px;}
 #why-us{padding: 100px 0 0;}
+
+/* Footer */
+.footer{background-color: #242c42;color: #fff;padding-top: 100px;}
+.testimonials-slider .slick-dots li button::before{color: red;font-size: 45px !important;}
+.email-address *, .call-no *{display: inline-block;vertical-align: middle;}
+.email-address a, .call-no a{margin: 10px 0;}
+.email-address p, .call-no p{margin: 0;}
+.address{padding-bottom: 30px;}
+.address,.email-address{border-bottom:1px solid #ffffff5e;}
+.email-address .icon, .call-no .icon{width: 20px;margin-right: 10px;}
+.footer .row{align-items:flex-start;}
+.copy{font-size: 13px;}
+.footer .menu-item{margin: 10px 0;}
+
 /* All Before and After elements */
 .center-content h2::before{position: absolute;content: '';height: 5px;width: 65px;background-color: #fff;left: 0;top: auto;left: 0;
 bottom: -5px;}
-.testimonials-slider .slick-dots li button::before{color: red;font-size: 45px !important;}
-
-
-
 
 /* All Hover effects */
 .join-now:hover,#contact-us input[type="submit"]:hover{color: #000;background-color: white;border-color: #242c42;transition: all 0.5s ease;}
-a:hover{text-decoration:none;color: #ed1c24;}
+a:hover{text-decoration:none;color: #ed1c24;transition: all 0.5s ease;}
 .center-a:hover .card.border-secondary{border-color: #ed1c24 !important;}
 .img-block:hover{border-color: #ed1c24;}
 #about-asia-learn .link a:hover{background-color: #fff;color: #242c42;}
