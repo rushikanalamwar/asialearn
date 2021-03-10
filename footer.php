@@ -46,7 +46,7 @@
 					<h5>Sitemap</h5>
 					</div>
 					<div class="col-md-4">
-					<h5>Sitemap</h5>	
+						<h5>Sitemap</h5>
 					</div>
 					<div class="col-md-4">
 						<?php wp_nav_menu( array( 'theme_location'=>'footer-menu-three' ) ); ?>
@@ -54,7 +54,38 @@
 				</div>				
 			</div>
 			<div class="col-lg-4 col-md-6 col-sm-12">
-				<h5>We respect your privacy.</h5>
+				<ul class="ul social-menu">
+					<li>
+						<a href="http://" target="_blank" rel="noopener noreferrer">
+							<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/img/facebook.png" alt="Facebook">
+						</a>
+					</li>
+					<li>
+						<a href="http://" target="_blank" rel="noopener noreferrer">
+							<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/img/google.png" alt="Google plus">
+						</a>
+					</li>
+					<li>
+						<a href="http://" target="_blank" rel="noopener noreferrer">
+							<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/img/twitter.png" alt="twitter">
+						</a>
+					</li>
+					<li>
+						<a href="http://" target="_blank" rel="noopener noreferrer">
+							<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/img/pinterest.png" alt="pinterest">
+						</a>
+					</li>
+					<li>
+						<a href="http://" target="_blank" rel="noopener noreferrer">
+							<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/img/rss.png" alt="rss feed">
+						</a>
+					</li>
+					<li>
+						<a href="http://" target="_blank" rel="noopener noreferrer">
+							<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/img/dribbble.png" alt="dribbble">
+						</a>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</div>

@@ -14,6 +14,7 @@ body{font-family: 'Roboto', sans-serif;font-weight: 300;scrollbar-width: thin;}
 .main-txt{color: #ed1c24;}
 .text-head{background-color: #ed1c24;padding: 100px 0;color: #fff;}
 strong{font-weight: bold;}
+iframe{width: 100%;}
 
 /* enroll section */
 #enroll-today{background-color: #ed1c24;padding: 100px 0;color: #fff;}
@@ -88,18 +89,50 @@ strong{font-weight: bold;}
 .footer .row{align-items:flex-start;}
 .copy{font-size: 13px;}
 .footer .menu-item{margin: 10px 0;}
+.social-menu li{display: inline-block;vertical-align: middle;}
+.social-menu li a{margin-right: 10px;margin-bottom: 10px;width: 30px;height: 30px;text-align: center;line-height: 30px;border-radius: 3px;background-color: #3B4757;display: inline-block;transition: all .3s ease-in;}
+.social-menu li a img{width: 15px;}
+/* Choose us */
+#choose-course .img-wrap{width: 50%;margin: auto;height: 200px;}
+#choose-course .img-wrap img{position: absolute;top: 50%;transform: translateY(-50%);}
+#choose-course h5{font-weight: bold;}
+#choose-course p{font-weight: 400;}
+#choose-course .get-started{}
+#choose-course{padding: 100px 0;}
+.get_start {background: #fff;font-weight: 100;color: #000;cursor: pointer;font-size: 16px;margin: 0.5em auto 2em;padding: 10px;text-align: center;position: relative;max-width: 140px;text-decoration: none;text-transform: uppercase;width: 100%;font-weight: 400;}
+.get_start rect {fill: none;stroke: #ed1c24;stroke-width: 2;stroke-dasharray: 422, 0;transition: all 0.35s linear;}
+.get_start svg {height: 44px;left: 0;position: absolute;top: 0;width: 100%;}
+.unlock{width: 30px;height: auto;margin:0 auto 30px auto;text-align: center;}
 
+/* Our course */
+.top-courses .top-courses-item {padding: 30px 0;text-align: left;}
+.edugate-layout-2 .edugate-layout-2-wrapper {padding: 30px 0 30px 30px;display: table;width: 100%;}
+.edugate-layout-2 .edugate-content {padding-right: 30px;position: relative;}
+.edugate-layout-2 .edugate-image {width: 200px;height: 200px;display: table-cell;position: relative;z-index: 1;}
+.edugate-content {display: table-cell;vertical-align: top;text-align: left;}
+.course-know-more{padding: 10px;border: 1px solid #ed1c24;border-radius: 3px;background-color: white;color: #000;font-size: 16px;font-weight: bold;margin: 15px 0 0;display: inline-block;}
+.edugate-layout-2 .edugate-content .description {height: auto;overflow: hidden;}
+.edugate-content .description{color: #6f8190;display: inline-block;width: 100%;line-height: 24px;}
+.edugate-content .title{font-weight: bold;font-size: 20px;}
+#our-course{padding-bottom: 100px;}
+#choose-course h2{font-weight: bold;}
 /* All Before and After elements */
 .center-content h2::before{position: absolute;content: '';height: 5px;width: 65px;background-color: #fff;left: 0;top: auto;left: 0;
 bottom: -5px;}
+.edugate-layout-2::after {position: absolute;z-index: 2;content: '';width: 5px;top: 0;left: 0;height: 0;background-color: #242c42;transition: all 0.5s ease;;}
+.edugate-layout-2::before {position: absolute;content: '';width: 75%;height: 100%;top: 0;left: 0;background-color: #fafafa;border-left: 5px solid #eaedf5;transition: all 0.3s linear;}
 
 /* All Hover effects */
 .join-now:hover,#contact-us input[type="submit"]:hover{color: #000;background-color: white;border-color: #242c42;transition: all 0.5s ease;}
+.course-know-more:hover{border-color: #242c42;}
 a:hover{text-decoration:none;color: #ed1c24;transition: all 0.5s ease;}
 .center-a:hover .card.border-secondary{border-color: #ed1c24 !important;}
 .img-block:hover{border-color: #ed1c24;}
 #about-asia-learn .link a:hover{background-color: #fff;color: #242c42;}
-
+.get_start:hover rect {stroke-width: 5;stroke-dasharray: 15, 310;stroke-dashoffset: 48;transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);}
+.get_start:hover {font-weight: 900;letter-spacing: 1px;}
+.edugate-layout-2:hover::after {height: 100%;}
+.social-menu li a:hover{background-color: #ed1c24;}
 /* media queries */
 @media (min-width:577px){
 	.container, .container-sm{max-width: 1170px;}
@@ -118,6 +151,13 @@ a:hover{text-decoration:none;color: #ed1c24;transition: all 0.5s ease;}
 	.custom-height{height: auto;}
 	
 }
+@media (max-width:576px){
+    #choose-course .img-wrap{height: auto;}
+    .edugate-content{display: block;}
+    .edugate-layout-2 .edugate-image{display: block;margin:20px auto auto;}
+    .edugate-layout-2::before{width: 100%;}
+    #choose-course .img-wrap img{position: relative;height: auto;top: auto;transform: none;}
+}
 @media (max-width: 590px) {
 	.why-us{height: auto;}
 }
@@ -128,3 +168,4 @@ a:hover{text-decoration:none;color: #ed1c24;transition: all 0.5s ease;}
 	#testi-page .no-mobile{display: none;}
 	#testi-page .testimonials-left, #testi-page .testimonials-right, #testi-page .testimonials-left-left, #testi-page .testimonials-right-right{float: none;width: 100%;}
 }
+

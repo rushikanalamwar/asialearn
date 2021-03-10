@@ -106,6 +106,7 @@
 			'pages/contact-us.php',
 			'pages/privacy-policy.php',
 			'pages/centers.php',
+			'pages/videos.php',
 		);
 		global $dispayBreadcrumb;
 		
