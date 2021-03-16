@@ -57,7 +57,7 @@
 			<!-- <li><a href="badges.html">ABACUS ENRICHMENT</a></li> -->
 			<li><a class="dropdown-trigger" href="#!" data-target="dropdown1">ABACUS ENRICHMENT<i class="material-icons right">arrow_drop_down</i></a></li>
 			<!-- <li><a href="badges.html">TUITION CLASSES</a></li> -->
-			<li><a class="dropdown-trigger" href="#!" data-target="dropdown2">TUITION CLASSES<i class="material-icons right">arrow_drop_down</i></a></li>
+			<li><a class="dropdown-trigger2" href="#!" data-target="dropdown2">TUITION CLASSES<i class="material-icons right">arrow_drop_down</i></a></li>
 			<li><a href="badges.html">PHOTO GALLERY</a></li>
 			<li><a href="badges.html">VIDEOS</a></li>
 			<li><a href="badges.html">CONTACT US</a></li>			
@@ -67,6 +67,3 @@
 		</div>
 		</nav>
 </header>
-<script>
-		$(".dropdown-trigger").dropdown();
-</script>
