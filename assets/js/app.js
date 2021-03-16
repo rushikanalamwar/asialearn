@@ -39,6 +39,10 @@ $('.testimonials-slider').slick({
       ]
   })
 });
+const elementDrop = document.querySelector(".dropdown-trigger");
+const instancesDropdown = M.Dropdown.init(elementDrop)
+const elementDrop2 = document.querySelector(".dropdown-trigger2");
+const instancesDropdown2 = M.Dropdown.init(elementDrop2)
 
 
     
