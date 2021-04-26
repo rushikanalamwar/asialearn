@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<script>0</script>
+	<!-- <script>
+		$(".dropdown-trigger").dropdown();
+	</script> -->
 	<title><?php bloginfo('title'); ?></title>
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta name="description" content="<?php bloginfo('description'); ?>">
@@ -11,10 +13,19 @@
 	<link href="<?php echo get_template_directory_uri(); ?>/assets/img/favicon.png" rel="shortcut icon">
 	<!-- bootstrap 4.5 -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	<!-- logo -->
+	<link href="<?php echo get_template_directory_uri(); ?>/assets/img/asialearnlogo.png" rel="shortcut icon">
 	<!-- Roboto font -->
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 	<!-- Slick Slider -->
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<?php
 		wp_head();
 		if(function_exists('get_common_file_path')){
@@ -65,6 +76,7 @@
 			</div>
 		</div>
 		<header>
+<<<<<<< HEAD
 			<div class="container">
 				<nav>
 					<div class="logo-wrap">
