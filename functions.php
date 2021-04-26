@@ -33,9 +33,10 @@
 	//Register Navigation Location
 	function register_theme_menus(){
 		register_nav_menus( array(
-			'sns-top-menu'	=>	__('SNS Top Menu'),
+			'header'	=>	__('Header'),
 			'service'	=>	__('services menu'),
 			'footer-menu-three'	=>	__('Footer Menu Three'),
+			'footer-menu-one'	=>	__('Footer Menu One'),
 		) );
 	}
 	add_action( 'after_setup_theme', 'register_theme_menus' );
@@ -107,6 +108,12 @@
 			'pages/privacy-policy.php',
 			'pages/centers.php',
 			'pages/videos.php',
+			'pages/for-schoolers.php',
+			'pages/abacus-enrichment-program.php',
+			'pages/moe-syllabus.php',
+			'pages/cbsc.php',
+			'pages/academic-support.php',
+			'pages/primary-schoolers.php',
 		);
 		global $dispayBreadcrumb;
 		

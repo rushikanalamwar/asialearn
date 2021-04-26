@@ -2,17 +2,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-4 col-md-6 col-sm-12">
-				<h2 class="mb-4"><?php bloginfo('title'); ?></h2>
-			</div>
-			<div class="col-lg-4 col-md-6 col-sm-12">
-				<h5>Sitemap</h5>
-			</div>
-			<div class="col-lg-4 col-md-6 col-sm-12">
-				<h5>We respect your privacy.</h5>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-lg-4 col-md-6 col-sm-12">
+				<h2 class="mb-2"><?php bloginfo('title'); ?></h2>
 				<div class="address">
 					756, Upper Serangoon Road #02-10,</br> Upper Serangoon Shopping Centre,</br> Singapore 534626.
 				</div>
@@ -41,19 +31,19 @@
 				
 			</div>
 			<div class="col-lg-4 col-md-6 col-sm-12">
+				<h5>Sitemap</h5>
 				<div class="row">
-					<div class="col-md-4">
-					<h5>Sitemap</h5>
+					<div class="col-md-7">
+						<?php wp_nav_menu( array( 'theme_location'=>'footer-menu-one' ) ); ?>
 					</div>
-					<div class="col-md-4">
-						<h5>Sitemap</h5>
-					</div>
-					<div class="col-md-4">
+
+					<div class="col-md-5">
 						<?php wp_nav_menu( array( 'theme_location'=>'footer-menu-three' ) ); ?>
 					</div>
 				</div>				
 			</div>
 			<div class="col-lg-4 col-md-6 col-sm-12">
+			<h5>We respect your privacy.</h5>
 				<ul class="ul social-menu">
 					<li>
 						<a href="http://" target="_blank" rel="noopener noreferrer">

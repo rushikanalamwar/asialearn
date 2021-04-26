@@ -26,8 +26,8 @@
             <div class="row">
             <?php $fields = CFS()->get( 'youtube_menu_loop' ); foreach ( $fields as $field ) {?>
                 <div class="col-lg-6 col-md-6">
-                <?php $link = $field['youtube_menu_link'];$l = explode ( '/' ,$link);?>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/<?php echo $l[3]?>?rel=0" frameborder="0" allowfullscreen></iframe>
+                <?php $link = $field['youtube_menu_link'];$l = explode ( '=' ,$link);?>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/<?php echo $l[1]?>?rel=0" frameborder="0" allowfullscreen></iframe>
                 </div>
                 <?php } ?>
             </div>

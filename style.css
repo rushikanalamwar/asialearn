@@ -24,6 +24,12 @@ iframe{width: 100%;}
 .enroll-left{width: 79%;display: inline-block; vertical-align: middle;padding-right: 50px;}
 .enroll-right{width: 20%;display: inline-block;vertical-align: middle;text-align: center;}
 
+/* Home Slider */
+/* .slider-back{width: 100%;height: 600px;} */
+.slider-back{background-position: center;background-size: cover;background-repeat: no-repeat;height: 100%;width: 100%;display: table;}
+#home-slider .outer-wrap{width: 100%;height: 600px;}
+
+
 /* Centers Location */
 .card-height{height: 150px;}
 .card.border-secondary{padding: 0 15px;}
@@ -34,6 +40,7 @@ iframe{width: 100%;}
 /* About Us */
 .img-block{height: 100px;width: 100px;background-color: #fff;border-radius: 50%;display: block;margin: 0 auto;vertical-align: middle;position: relative;z-index: 2;transition: all .3s ease-in;padding:35px 0;border: 1px solid transparent;}
 .res-list{margin: auto;text-align: center;padding-top: 70px;}
+.img-block img{width: 30px;height: 30x;}
 .res-list .res-wrap{width: 20%;display: inline-block;vertical-align: middle;}
 .about-resources{background-color: #eaedf5;text-align: center;padding: 150px 0;}
 .about-resources h2 span{font-weight: bold;}
@@ -47,12 +54,13 @@ iframe{width: 100%;}
 .testimonials-sub-head p svg{width: 30px;height: auto;}
 .testimonials-sub-head p svg path{fill: #ed1c24;}
 .testimonials-slider .slick-slide{padding:0 20px;}
-.testimonials-slider{margin: 150px 100px !important;}
-.testimonials-slider .slick-dots{bottom: -45px;}
+.testimonials-slider{margin: 0px 100px 150px !important;}
+.testimonials-slider .slick-dots, #home-slider .slick-dots{bottom: -45px;}
 .test-left-wrap, .test-right-wrap{padding: 50px 0;}
 .testimonials-left-left{width: 120px;float: right;}
 .testimonials-right-right{width: calc(100% - 120px);float: left;background-color: #eaedf5;padding: 20px 40px;}
 .testimonials-imag{text-align: center;}
+.testimonials-head{font-weight: bold;padding-top: 20px;}
 #testi-page .mob-desk{display: none;}
 
 /* About Asia Learn */
@@ -75,11 +83,11 @@ iframe{width: 100%;}
 .why-us{box-shadow: 0px 0 0px 5px aliceblue;margin: auto;text-align: center;height: 160px;}
 .why-us .img-wrap{padding: 20px 0 0 20px;border-radius: 30px;width: 60px;}
 .why-us .card-body{padding-right: 5px;}
-#why-us{padding: 100px 0 0;}
+#why-us{padding: 100px 0 100px;}
 
 /* Footer */
 .footer{background-color: #242c42;color: #fff;padding-top: 100px;}
-.testimonials-slider .slick-dots li button::before{color: red;font-size: 45px !important;}
+.testimonials-slider .slick-dots li button::before, #home-slider .slick-dots li button::before{color: red;font-size: 45px !important;}
 .email-address *, .call-no *{display: inline-block;vertical-align: middle;}
 .email-address a, .call-no a{margin: 10px 0;}
 .email-address p, .call-no p{margin: 0;}
@@ -88,10 +96,17 @@ iframe{width: 100%;}
 .email-address .icon, .call-no .icon{width: 20px;margin-right: 10px;}
 .footer .row{align-items:flex-start;}
 .copy{font-size: 13px;}
-.footer .menu-item{margin: 10px 0;}
+.footer .menu-item{margin: 5px 0;}
 .social-menu li{display: inline-block;vertical-align: middle;}
 .social-menu li a{margin-right: 10px;margin-bottom: 10px;width: 30px;height: 30px;text-align: center;line-height: 30px;border-radius: 3px;background-color: #3B4757;display: inline-block;transition: all .3s ease-in;}
 .social-menu li a img{width: 15px;}
+.menu-footer-menu-one-container *, .menu-footer-menu-three-container *{font-size: 16px !important;}
+.menu-footer-menu-one-container ul li{position: relative;padding-left: 10px;}
+.menu-footer-menu-one-container ul li::before{content: '*';left: 0;position:absolute;color: #ed1c24;top: 50%;transform: translateY(-50%);}
+
+
+
+
 /* Choose us */
 #choose-course .img-wrap{width: 50%;margin: auto;height: 200px;}
 #choose-course .img-wrap img{position: absolute;top: 50%;transform: translateY(-50%);}
@@ -103,6 +118,45 @@ iframe{width: 100%;}
 .get_start rect {fill: none;stroke: #ed1c24;stroke-width: 2;stroke-dasharray: 422, 0;transition: all 0.35s linear;}
 .get_start svg {height: 44px;left: 0;position: absolute;top: 0;width: 100%;}
 .unlock{width: 30px;height: auto;margin:0 auto 30px auto;text-align: center;}
+
+/* Header */
+.top-row{background-color: #242c42;color: white;padding: 20px 0;}
+.top-row img{width: 20px;margin-right: 10px;}
+.top-row ul{margin: 0;}
+.menu *{display: inline-block;}
+.top-row ul *{display: inline-block;font-weight: inherit;}
+.top-row .left-menu li:last-child{margin-left: 30px;}
+.text-last{text-align: right;}
+.text-first{text-align: left;}
+.menu a{font-size: 20px;line-height: 26px;font-weight: bolder;padding: 0 5px;}
+.logo-wrap *, .menu-wrap *{display: inline-block;vertical-align: middle;}
+.logo-wrap{max-width: 220px;display: inline-block;vertical-align: middle;}
+.menu-wrap{width: calc(100% - 225px);display: inline-block;vertical-align: middle;text-align: right;}
+.menu-wrap ul{margin-bottom: 0;}
+.sub-menu{display: none;z-index: 100;}
+.sub-menu li a{font-size: 17px;}
+nav {margin: 10px 0;}
+.menu-wrap li{padding: 20px 5px;}
+.abacus-enrichment > ul, .tution-classes > ul{position: absolute;top: 65px;background-color: white;border: 1px solid #ed1c24;border-radius: 3px;}
+.abacus-enrichment > ul li, .tution-classes > ul li{padding: 5px 15px !important;text-align: left;width: 400px;}
+.tution-classes > ul li{width: 250px;}
+#meny {background: #333;width: 0;height: 100%;position: fixed;right: 0;transition-timing-function: cubic-bezier(10,2,3,1);transform: translateX(50rem);top: 0;z-index: 1;transition: 0.5s;margin: 0;}
+#menyAvPaa {display: none;}
+#menyAvPaa:checked ~ #meny {transform: translateX(0rem);width: 100%;}
+#burger {position: absolute;cursor: pointer;width: 2rem;height: 2rem;right: -20px;top: -10px;display: flex;justify-content: space-between;flex-direction: column;}
+#burger > div {height: 3px;background-color: #000;transition: 0.5s;z-index: 999;}
+#menyAvPaa:checked ~ #burger > div {background-color: #fff;}
+#menyAvPaa:checked ~ #burger > div:nth-child(1) {transform: translateY(15px) rotate(45deg);}
+#menyAvPaa:checked ~ #burger > div:nth-child(2) {opacity: 0;}
+#menyAvPaa:checked ~ #burger > div:nth-child(3) {transform: translateY(-15px) rotate(-45deg);}
+.mobile-menu{display: none;}
+#meny .menu-header-container{display: block !important;color: white;display: block;width: 92%;}
+#meny .menu-header-container *{display: block;text-align: left;}
+#meny .menu-header-container .sub-menu{display: block;position: relative;top: auto;left: auto;right: auto;background-color: #333;color: white;border: none;text-align: left;padding: 20px 0 0 20px;}
+#meny .menu-header-container #menu-header{padding-left: 50px;}
+#meny .menu-header-container li{padding: 15px 5px;}
+#meny .abacus-enrichment > ul li, #meny .tution-classes > ul li{width: 100%;}
+
 
 /* Our course */
 .top-courses .top-courses-item {padding: 30px 0;text-align: left;}
@@ -116,9 +170,10 @@ iframe{width: 100%;}
 .edugate-content .title{font-weight: bold;font-size: 20px;}
 #our-course{padding-bottom: 100px;}
 #choose-course h2{font-weight: bold;}
+
 /* All Before and After elements */
 .center-content h2::before{position: absolute;content: '';height: 5px;width: 65px;background-color: #fff;left: 0;top: auto;left: 0;
-bottom: -5px;}
+bottom: -15px;}
 .edugate-layout-2::after {position: absolute;z-index: 2;content: '';width: 5px;top: 0;left: 0;height: 0;background-color: #242c42;transition: all 0.5s ease;;}
 .edugate-layout-2::before {position: absolute;content: '';width: 75%;height: 100%;top: 0;left: 0;background-color: #fafafa;border-left: 5px solid #eaedf5;transition: all 0.3s linear;}
 
@@ -132,14 +187,53 @@ a:hover{text-decoration:none;color: #ed1c24;transition: all 0.5s ease;}
 .get_start:hover rect {stroke-width: 5;stroke-dasharray: 15, 310;stroke-dashoffset: 48;transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);}
 .get_start:hover {font-weight: 900;letter-spacing: 1px;}
 .edugate-layout-2:hover::after {height: 100%;}
+.abacus-enrichment:hover > ul, .tution-classes:hover > ul{display: block;}
+
 .social-menu li a:hover{background-color: #ed1c24;}
+
+.page-template-primary-schoolers .main-content .wp-block-columns .wp-block-column:hover:hover {background-color: #fff;border-color: #ed1c24;box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);}
+/* abacus */
+.page-template-abacus-enrichment-program .main-content ul li, .page-template-for-schoolers .main-content ul li, .page-template-primary-schoolers .main-content ul li{position: relative;padding-left: 20px;}
+.page-template-abacus-enrichment-program .main-content ul li::before, .page-template-for-schoolers .main-content ul li::before,.page-template-primary-schoolers .main-content ul li::before{content: '>';position: absolute;left: 0;right: auto;color: #ed1c24;font-weight: bold;font-size: 15px;}
+.page-template-for-schoolers p{margin: 0;}
+.page-template-primary-schoolers .main-content .wp-block-columns .wp-block-column{display: inline-block;width: 30%;vertical-align: top;margin: 70px 10px;background-color: #e9ecef;padding: 30px 10px 20px 20px;height: 300px;text-align: left;border: 1px solid transparent;transition: all 0.5s ease;}
+.page-template-primary-schoolers .main-content .wp-block-columns .wp-block-column p{font-size: 25px;font-weight: normal;}
+.page-template-primary-schoolers .main-content .wp-block-columns .wp-block-column ul{font-size: 15px;}
+.page-template-primary-schoolers .main-content .wp-block-columns {text-align: center;}
+.desk-testi{display:block;}
+.mobile-testi{display:none;}
+/* YT */
+.yt-head h2{font-weight: bold;margin-bottom:50px}
+
+
 /* media queries */
 @media (min-width:577px){
 	.container, .container-sm{max-width: 1170px;}
 }
+@media (max-width:1300px) {
+	#home-slider .outer-wrap{height: 460px;}
+  #about-asia-learn{padding:150px 0;}
+}
+@media (max-width: 1100px) {.page-template-primary-schoolers .main-content .wp-block-columns .wp-block-column{width:45%;margin: 10px;}}
 @media (max-width: 1024px) {
 	.about-resources{padding: 100px 0 50px;}
 	.res-list .res-wrap{width: 24%;}
+	.text-last,.text-first{text-align: center;}
+	.text-first{margin: 10px 0;}
+	.mobile-menu{display: block;}
+  	#contact-us label{padding-top: 15px;}
+	.menu-header-container{display: none;}
+	#burger{right: 0;}
+    #about-asia-learn{padding:100px 0;}
+    #about-asia-learn .asia-head{font-size:35px;line-height: 45px;}
+	#home-slider .outer-wrap{height: 360px;}
+	h2{font-size: 25px;}
+  	#why-us{padding:25px 0;}
+	.testimonials-slider{margin: 0px 0px 150px !important;}
+  	#enroll-today .enroll-head {font-size: 30px;line-height: 45px;}
+}
+@media (max-width: 902px) {
+	
 }
 @media (max-width: 767px) {
 	.res-list .res-wrap{width: 49%;margin-bottom: 40px;}
@@ -149,23 +243,36 @@ a:hover{text-decoration:none;color: #ed1c24;transition: all 0.5s ease;}
 	.test-left-wrap, .test-right-wrap{padding: 15px 0;}
 	#enroll-today{padding:50px 0;}
 	.custom-height{height: auto;}
-	
+  	.desk-testi{display:none;}
+	.mobile-testi{display:block;}
+	#home-slider .outer-wrap{height: 200px;}
+  	.testimonials-left, .testimonials-right,.testimonials-right-right{float: none;}
+	.testimonials-right, .testimonials-right-right{width:100%}
+	.enroll-left, .enroll-right{padding-right: 0;text-align: center;}
+  .page-template-primary-schoolers .main-content .wp-block-columns .wp-block-column{width:100%;margin: 10px;height:auto;}
 }
 @media (max-width:576px){
+  	#about-asia-learn img{width:250px}
+  	#about-asia-learn .col-lg-4.col-md-4.col-sm-6.col-xs-12{margin:auto;text-align:center}
     #choose-course .img-wrap{height: auto;}
     .edugate-content{display: block;}
     .edugate-layout-2 .edugate-image{display: block;margin:20px auto auto;}
     .edugate-layout-2::before{width: 100%;}
     #choose-course .img-wrap img{position: relative;height: auto;top: auto;transform: none;}
+	#meny .menu-header-container #menu-header{padding-left: 20px;}
+	#meny .menu-header-container .sub-menu{padding: 10px 0 0 10px;}
+	#meny .menu-header-container .sub-menu li{padding: 0 !important;}
 }
 @media (max-width: 590px) {
 	.why-us{height: auto;}
+	#home-slider .outer-wrap{height: 150px;}
+	.testimonials-left, .testimonials-right{float: none;}
+	.testimonials-right{width:100%}
 }
 @media (max-width: 499px) {
 	.res-list .res-wrap{width: 100%;margin-bottom: 30px;}
 	#testi-page .mob-desk{display: block;}
-	.testimonials-imag img{padding: 15px 90px;}
+	.testimonials-imag img{padding: 0;margin-bottom:30px;}
 	#testi-page .no-mobile{display: none;}
 	#testi-page .testimonials-left, #testi-page .testimonials-right, #testi-page .testimonials-left-left, #testi-page .testimonials-right-right{float: none;width: 100%;}
 }
-

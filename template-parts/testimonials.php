@@ -3,11 +3,12 @@
         <div class="testimonials-slider">
         <?php
             // The Query
-            $args = array('post_type' => 'post', 'post_status' => 'publish', 'orderby' => 'modified', 'tag' => 'testimonials', 'posts_per_page' => 1);
+            $args = array('post_type' => 'post', 'post_status' => 'publish', 'orderby' => 'modified', 'tag' => 'testimonials', 'posts_per_page' => 2, );
             $my_query = null; $my_query = new WP_Query($args);
                 // The Loop
-                if ( $my_query->have_posts() ):while ($my_query->have_posts()) : $my_query->the_post();
-            $fields = CFS()->get( 'testimonials_loop' ); foreach ( $fields as $field ) {?>
+                if ( $my_query->have_posts() ):while ($my_query->have_posts()) : $my_query->the_post();$i=0;
+            $fields = CFS()->get( 'testimonials_loop' ); foreach ( $fields as $field ) { echo $i;  ?>
+            <?php if ($i>=2){echo "vfvf";}?>
                 <div class="slider-wrap">
                     <div class="testimonials-left">
                         <div class="testimonials-imag">
@@ -37,7 +38,7 @@
                         </div>
                     </div>
                 </div>
-            <?php  } endwhile; endif; /* Restore original Post Data */ wp_reset_query(); ?>
+            <?php  $i++; } endwhile; endif; /* Restore original Post Data */ wp_reset_query(); ?>
         </div>
     </div>
 </section>
