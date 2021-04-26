@@ -38,7 +38,7 @@ iframe{width: 100%;}
 .center-content h2{font-weight: bolder;margin: 0 !important;font-size: 50px;line-height: 58px;}
 
 /* About Us */
-.img-block{height: 100px;width: 100px;background-color: #fff;border-radius: 50%;display: block;margin: 0 auto;vertical-align: middle;position: relative;z-index: 2;transition: all .3s ease-in;padding:35px 0;border: 1px solid transparent;}
+.img-block{height: 100px;width: 100px;background-color: #fff;border-radius: 50%;display: block;margin: 0 auto;position: relative;z-index: 2;transition: all .3s ease-in;padding:35px 0;border: 1px solid transparent;}
 .res-list{margin: auto;text-align: center;padding-top: 70px;}
 .img-block img{width: 30px;height: 30x;}
 .res-list .res-wrap{width: 20%;display: inline-block;vertical-align: middle;}
@@ -112,7 +112,6 @@ iframe{width: 100%;}
 #choose-course .img-wrap img{position: absolute;top: 50%;transform: translateY(-50%);}
 #choose-course h5{font-weight: bold;}
 #choose-course p{font-weight: 400;}
-#choose-course .get-started{}
 #choose-course{padding: 100px 0;}
 .get_start {background: #fff;font-weight: 100;color: #000;cursor: pointer;font-size: 16px;margin: 0.5em auto 2em;padding: 10px;text-align: center;position: relative;max-width: 140px;text-decoration: none;text-transform: uppercase;width: 100%;font-weight: 400;}
 .get_start rect {fill: none;stroke: #ed1c24;stroke-width: 2;stroke-dasharray: 422, 0;transition: all 0.35s linear;}
